@@ -4,14 +4,13 @@
 
 void print_usage() {
     printf("Usage: rva <base_original> <base_target> <absolute_address>\n");
-    printf("  <base_original>       - Base Address 0x140000000\n");
+    printf("  <base_original>       - Base Address (typically 0x140000000)\n");
     printf("  <base_target>         - Base address for converted absolute \n");
     printf("  <absolute_address>    - Absolute address\n");
 }
 
 int main(int argc, char *argv[]) {
     if (argc != 4) {
-        printf("%d", argc);
         print_usage();
         return 1;
     }
